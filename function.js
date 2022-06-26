@@ -41,7 +41,7 @@ function InsertTODOlist(){
     }
     data.push({"Task_name": name.value, "Task_deadline": deadline.value.replace('T', ' ')});
     writeTODO(data);
-    window.location.href = "/"
+    location.reload()
 }
 
 function DeleteTask(index){
@@ -51,7 +51,7 @@ function DeleteTask(index){
     }
     data.splice(index, 1)
     writeTODO(data)
-    window.location.href = "/"
+    location.reload()
 }
 
 RenderTODOList();
